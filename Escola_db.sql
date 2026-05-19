@@ -1,4 +1,21 @@
+# criando o banco de dados
+CREATE DATABASE escola;
+
+#usando o banco de dados
 use escola;
+
+#criando a tabela professores
+CREATE TABLE professores (
+    idProfessor     INT PRIMARY KEY AUTO_INCREMENT,
+    nomeProfessor     VARCHAR(100) NOT NULL,
+    telefone         VARCHAR(20),
+    email             VARCHAR(100),
+    especialidade     VARCHAR(100)
+);
+
+#vendo a tabela criada
+select * from professores;
+
 CREATE TABLE cursos (
     idCurso 		INT PRIMARY KEY AUTO_INCREMENT,
     nomeCurso	 	VARCHAR(100) NOT NULL,	
